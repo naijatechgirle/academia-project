@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>academia project</title>
+		<link rel="stylesheet" type="text/css" href="./assets/stylesheets/fonts/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/stylesheets/libraries/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css" />
+	</head>
+	<body>
+		<section class="container">
+			<div class="row mx-3 mt-5">
+				<div class="row mt-2 mb-0 mb-md-4 offset-2 offset-md-5">
+					<h5>Group: Jss 1 (12 students)</h5>
+				</div>
+				<div class="row justify-content-md-between col-12 mt-3 ml-1 ml-md-0">
+                    <!-- invite a student -->
+					<div
+						class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+						data-toggle="modal"
+						data-target="#inviteStudent"
+						data-whatever="@mdo"
+					>
+						<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3">Invite Students</h6>
+					</div>
+
+					<div
+						class="modal fade"
+						id="inviteStudent"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog mt-4 mt-md-5" role="document">
+							<div class="modal-content ml-4">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h5>Invite A Student By Email</h5>
+									<form>
+										<div class="form-group row ml-1">
+											<label for="recipient-name" class="col-12 col-form-label"
+												>Email Address:</label
+											>
+											<input
+												type="email"
+												class="form-control form-inline col-6 col-md-6"
+												id="recipient-name"
+												placeholder="enter stdent's email address"
+											/>
+											<button class="btn btn-sm box-shadow bg-primary text-white col-3 ml-2">
+												Invite
+											</button>
+										</div>
+										<div class="form-group">
+											<label for="message-text" class="col-form-label ml-2">OR:</label>
+											<h5 class="py-3">Invite Students By Link</h5>
+											<p>http://rad54schools/234/invite<br />(Share link with)</p>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-primary box-shadow btn-sm text-center"
+										data-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <!-- schedule a quiz -->
+					<div
+						class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+						data-toggle="modal"
+						data-target="#quiz"
+						data-whatever="@mdo"
+					>
+						<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3">Schedule A Quiz</h6>
+					</div>
+
+					<div
+						class="modal fade"
+						id="quiz"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog mt-4 mt-md-5" role="document">
+							<div class="modal-content ml-4">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h5>Schedule A Quiz:</h5>
+									<form>
+										<div class="form-group row ml-1">
+											<label for="recipient-name" class="col-12 col-form-label"
+												>Question 1</label
+											>
+											<textarea class="form-control col-8" id="message-text"></textarea>
+										</div>
+										<div class="form-group row">
+                                            <div class="col-5">
+                                                <label for="message-text" class="col-form-label ml-2 col-12 ">Option A</label>
+                                                <input type="text" class="form-control col rounded">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="message-text" class="col-form-label ml-2 col-12 ">Option B</label>
+                                                <input type="text" class="form-control col rounded">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="message-text" class="col-form-label ml-2 col-12 ">Option C</label>
+                                                <input type="text" class="form-control col rounded">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="message-text" class="col-form-label ml-2 col-12 ">Option D</label>
+                                                <input type="text" class="form-control col rounded">
+                                            </div>
+                                        </div>
+                                        <div class="row ml-0 ml-md-3 my-3">
+                                            <button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-0 ml-md-2">
+												Add & Continue
+											</button>
+                                            <button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-4 ml-md-2">
+												Add & Schedule
+											</button>
+                                        </div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-primary box-shadow btn-sm text-center"
+										data-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- publish assignment -->
+                    <div
+						class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+						data-toggle="modal"
+						data-target="#publish"
+						data-whatever="@mdo"
+					>
+						<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3 ">Publish Assignment</h6>
+					</div>
+
+					<div
+						class="modal fade"
+						id="publish"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog mt-4 mt-md-5" role="document">
+							<div class="modal-content ml-4">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+                                    <h5>Publish Group Assignment</h5>
+                                    <form>
+									<label for="recipient-name" class="col-12 col-form-label"
+												>Question or Comment</label
+											>
+									<textarea class="form-control col-8" id="message-text"></textarea>
+										<div class="form-group row ml-1">
+											<label for="recipient-name" class="col-12 col-form-label"
+												>Attach a file</label
+											>
+											<input
+												type="file"
+												class="form-control form-inline col-7 col-md-6"
+												id="recipient-name"
+											/>
+										</div>
+										<div class="form-group">
+											<label for="message-text" class="col-form-label ml-2 ml-md-3">Deadline</label>
+											<input
+												type="text"
+												class="form-control form-inline col-7 col-md-6 ml-0 ml-md-2"
+												id="recipient-name"
+											/>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-sm box-shadow bg-primary text-white col-7 col-md-10 ml-0 ml-md-5 my-2">
+												Publish
+											</button>
+                                        </div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-primary box-shadow btn-sm text-center"
+										data-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</div>
+				<!-- <div class="row justify-content-md-between col-12 ml-1 ml-md-0"> -->
+				<!-- second row -->
+					<div class="row justify-content-md-between col-12 mt-3 ml-1 ml-md-0">
+						<!-- invite a student -->
+						<div
+							class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+						>
+							<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3"><a href="./submission.html" class="text-dark">Students' Submissions</a></h6>
+						</div>
+	
+						
+						<!-- schedule a quiz -->
+						<div
+							class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+							data-toggle="modal"
+							data-target="#quiz"
+							data-whatever="@mdo"
+						>
+							<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3">Schedule A Quiz</h6>
+						</div>
+	
+						<div
+							class="modal fade"
+							id="quiz"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog mt-4 mt-md-5" role="document">
+								<div class="modal-content ml-4">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<h5>Schedule A Quiz:</h5>
+										<form>
+											<div class="form-group row ml-1">
+												<label for="recipient-name" class="col-12 col-form-label"
+													>Question 1</label
+												>
+												<textarea class="form-control col-8" id="message-text"></textarea>
+											</div>
+											<div class="form-group row">
+												<div class="col-5">
+													<label for="message-text" class="col-form-label ml-2 col-12 ">Option A</label>
+													<input type="text" class="form-control col rounded">
+												</div>
+												<div class="col-5">
+													<label for="message-text" class="col-form-label ml-2 col-12 ">Option B</label>
+													<input type="text" class="form-control col rounded">
+												</div>
+												<div class="col-5">
+													<label for="message-text" class="col-form-label ml-2 col-12 ">Option C</label>
+													<input type="text" class="form-control col rounded">
+												</div>
+												<div class="col-5">
+													<label for="message-text" class="col-form-label ml-2 col-12 ">Option D</label>
+													<input type="text" class="form-control col rounded">
+												</div>
+											</div>
+											<div class="row ml-0 ml-md-3 my-3">
+												<button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-0 ml-md-2">
+													Add & Continue
+												</button>
+												<button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-4 ml-md-2">
+													Add & Schedule
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn btn-primary box-shadow btn-sm text-center"
+											data-dismiss="modal"
+										>
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- publish assignment -->
+						<div
+							class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
+							data-toggle="modal"
+							data-target="#publish"
+							data-whatever="@mdo"
+						>
+							<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3 ">Publish Assignment</h6>
+						</div>
+	
+						<div
+							class="modal fade"
+							id="publish"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog mt-4 mt-md-5" role="document">
+								<div class="modal-content ml-4">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<h5>Publish Group Assignment</h5>
+										<form>
+										<label for="recipient-name" class="col-12 col-form-label"
+													>Question or Comment</label
+												>
+										<textarea class="form-control col-8" id="message-text"></textarea>
+											<div class="form-group row ml-1">
+												<label for="recipient-name" class="col-12 col-form-label"
+													>Attach a file</label
+												>
+												<input
+													type="file"
+													class="form-control form-inline col-7 col-md-6"
+													id="recipient-name"
+												/>
+											</div>
+											<div class="form-group">
+												<label for="message-text" class="col-form-label ml-2 ml-md-3">Deadline</label>
+												<input
+													type="text"
+													class="form-control form-inline col-7 col-md-6 ml-0 ml-md-2"
+													id="recipient-name"
+												/>
+											</div>
+											<div>
+												<button class="btn btn-sm box-shadow bg-primary text-white col-7 col-md-10 ml-0 ml-md-5 my-2">
+													Publish
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn btn-primary box-shadow btn-sm text-center"
+											data-dismiss="modal"
+										>
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="text-center p-2 mt-5">
+			academia &copy; 2020
+		</footer>
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./assets/js/libraries/bootstrap.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

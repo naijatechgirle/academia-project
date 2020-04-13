@@ -234,7 +234,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: .5rem;
-  font-size: larger;
+  font-size: normal;
 }
 
 button {
@@ -2034,6 +2034,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
+  margin-left: -8px;
 }
 
 .col-form-label-lg {
@@ -3071,8 +3072,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.22rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
