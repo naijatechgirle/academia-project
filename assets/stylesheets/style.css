@@ -24,3 +24,11 @@ i:hover {
 .big:hover {
   transform: scale(1.1) !important;
 }
+#caption-sm2 {
+  margin-top: -13px;
+  font-size: 0.6rem;
+}
+#caption-lg2 {
+  margin-top: -15px;
+  font-size: 1.5rem;
+}
