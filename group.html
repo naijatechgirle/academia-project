@@ -81,7 +81,7 @@
 					<div
 						class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
 						data-toggle="modal"
-						data-target="#quiz"
+						data-target="#schedule"
 						data-whatever="@mdo"
 					>
 						<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3">Schedule A Quiz</h6>
@@ -89,7 +89,7 @@
 
 					<div
 						class="modal fade"
-						id="quiz"
+						id="schedule"
 						tabindex="-1"
 						role="dialog"
 						aria-labelledby="exampleModalLabel"
@@ -132,11 +132,63 @@
                                         </div>
                                         <div class="row ml-0 ml-md-3 my-3">
                                             <button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-0 ml-md-2">
-												Add & Continue
+												Add Another Question
 											</button>
-                                            <button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-4 ml-md-2">
-												Add & Schedule
-											</button>
+											<!-- new modal -->
+											<!-- Button trigger modal -->
+<button type="button" class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-4 ml-md-2" data-toggle="modal" data-target="#finalQuiz">
+	Add & Schedule
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade pl-5 pl-md-5" id="finalQuiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content border border-dark">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body m-3 p-0 p-md-2">
+			<h5 class="pt-0 pt-md-3 mt-0 mt-md-1">Finalize Quiz:</h5>
+			<form action="" class="m-0 m-md-3 px-0 px-md-5">
+				<div class="form-group row ml-0 ml-md-1">
+					<label for="recipient-name" class="col-12 col-form-label"
+						>Duration In Minutes</label
+					>
+					<input
+						type="time"
+						class="form-control form-inline col-7 col-md-6"
+						id="recipient-name"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="message-text" class="col-form-label ml-2 ml-md-3">Deadline Date</label>
+					<input
+						type="date"
+						class="form-control form-inline col-7 col-md-6 ml-0 ml-md-2"
+						id="recipient-name"
+					/>
+				</div>
+				<div>
+					<button class="btn btn-sm box-shadow bg-primary text-white col-7 col-md-10 ml-0 ml-md-5 my-2">
+						Schedule Quiz
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button
+			type="button"
+			class="btn btn-primary box-shadow btn-sm text-center"
+			data-dismiss="modal"
+		>
+			Close
+		</button>		</div>
+	  </div>
+	</div>
+  </div>
                                         </div>
 									</form>
 								</div>
@@ -198,7 +250,7 @@
 										<div class="form-group">
 											<label for="message-text" class="col-form-label ml-2 ml-md-3">Deadline</label>
 											<input
-												type="text"
+												type="date"
 												class="form-control form-inline col-7 col-md-6 ml-0 ml-md-2"
 												id="recipient-name"
 											/>
@@ -223,22 +275,18 @@
 						</div>
                     </div>
 				</div>
-				<!-- <div class="row justify-content-md-between col-12 ml-1 ml-md-0"> -->
 				<!-- second row -->
 					<div class="row justify-content-md-between col-12 mt-3 ml-1 ml-md-0">
-						<!-- invite a student -->
+						<!-- Students' submission -->
 						<div
 							class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
 						>
 							<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3"><a href="./submission.html" class="text-dark">Students' Submissions</a></h6>
 						</div>
-	
-						
-						<!-- schedule a quiz -->
 						<div
 							class="mb-4 mb-md-5 box-shadow border border-dark bg-light col-12 col-md-3 big text-center rounded"
 							data-toggle="modal"
-							data-target="#quiz"
+							data-target="#delete"
 							data-whatever="@mdo"
 						>
 							<h6 class="bg-light text-center my-5 my-md-5 py-0 py-md-3">Delete Group</h6>
@@ -246,7 +294,7 @@
 	
 						<div
 							class="modal fade"
-							id="quiz"
+							id="delete"
 							tabindex="-1"
 							role="dialog"
 							aria-labelledby="exampleModalLabel"
@@ -255,15 +303,15 @@
 							<div class="modal-dialog mt-4 mt-md-5" role="document">
 								<div class="modal-content ml-4">
 									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
+										<!-- <h5 class="modal-title" id="exampleModalLabel">Group: Jss 1 (12 students)</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
-										</button>
+										</button> -->
 									</div>
 									<div class="modal-body">
-										<h5>Schedule A Quiz:</h5>
+										<h5>Delete Group:</h5>
 										<form>
-											<div class="form-group row ml-1">
+											<!-- <div class="form-group row ml-1">
 												<label for="recipient-name" class="col-12 col-form-label"
 													>Question 1</label
 												>
@@ -294,7 +342,7 @@
 												<button class="btn btn-sm box-shadow bg-primary text-white col-5 col-md-4 ml-4 ml-md-2">
 													Add & Schedule
 												</button>
-											</div>
+											</div> -->
 										</form>
 									</div>
 									<div class="modal-footer">
